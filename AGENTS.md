@@ -1,0 +1,7 @@
+- Prioritize clean, efficient and maintainable code
+- Follow best practices and design patterns appropriate for the language, framework and project
+- If task is unclear ask clarifying questions
+- Clean up unused code
+- Follow SOLID and KISS principles
+- Always answer in russian language
+- Use subagents if necessary
