@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nist-cpe-ai-search"
+version = "0.1.0"
+description = "DeepSeek and MCP based software to NVD CPE matching CLI"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp==2.3.0",
+    "nvdlib==0.9.0",
+    "openai==3.35.1",
+    "python-dotenv>=1.2,<2",
+    "jsonschema>=4.26,<5",
+    "requests>=2.34,<3",
+]
+
+[project.scripts]
+cpe-match = "cpe_matcher.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cpe_matcher*"]
